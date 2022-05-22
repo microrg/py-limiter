@@ -1,2 +1,5 @@
 test.sh
 test_default.py
+
+dist
+pylimiter.egg-info
