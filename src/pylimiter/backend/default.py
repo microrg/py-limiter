@@ -20,7 +20,7 @@ class DefaultBackend(Backend):
         return r.json()
 
     def bind(self, plan_id, user_id):
-        return self._do_request('/bind', {'user_id': user_id, 'plan_id': plan_id})
+        return self._do_request('/bind', {'user_id': user_id, 'project_id': self.project_id, 'plan_id': plan_id})
 
     def feature(self, feature_id, user_id):
         return self._do_request('/feature', {'user_id': user_id,

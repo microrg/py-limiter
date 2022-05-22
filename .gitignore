@@ -3,3 +3,4 @@ test_default.py
 
 dist
 pylimiter.egg-info
+__pycache__
