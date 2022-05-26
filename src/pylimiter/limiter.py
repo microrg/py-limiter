@@ -1,4 +1,4 @@
-from src.pylimiter.backend.default import DefaultBackend
+from pylimiter.backend.default import DefaultBackend
 
 
 class Client:

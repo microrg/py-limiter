@@ -2,7 +2,7 @@ import logging
 
 import requests
 
-from src.pylimiter.backend.interface import Backend
+from pylimiter.backend.interface import Backend
 
 logging.basicConfig(level=logging.INFO)
 
