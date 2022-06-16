@@ -16,8 +16,8 @@ Initialize SDK with the managed storage backend
 from pylimiter import limiter
 
 opts = {
-  backend: 'Default',
-  api_token: 'api-token',
+  'backend': 'Default',
+  'api_token': 'api-token',
 };
 client = limiter.Client('project-id', opts);
 ```
