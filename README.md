@@ -32,13 +32,13 @@ client.bind('plan-name', 'user-id')
 if client.feature('feature-name', 'user-id'):
   print('Pass')
 
-# Increment usage by 1.
-client.increment('feature-name', 'user-id')
+# Increment usage
+client.increment('feature-name', 'user-id', 1)
 
-# Decrement usage by 1.
-client.decrement('feature-name', 'user-id')
+# Decrement usage
+client.decrement('feature-name', 'user-id', 1)
 
-# Set usage to some value.
+# Set usage to some value
 client.set('feature-name', 'user-id', 5)
 
 # Get feature matrix for the project

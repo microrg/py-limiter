@@ -14,11 +14,11 @@ class Client:
     def feature(self, feature_id, user_id):
         return self.backend.feature(feature_id, user_id)
 
-    def increment(self, feature_id, user_id):
-        return self.backend.increment(feature_id, user_id)
+    def increment(self, feature_id, user_id, value=1):
+        return self.backend.increment(feature_id, user_id, value)
 
-    def decrement(self, feature_id, user_id):
-        return self.backend.decrement(feature_id, user_id)
+    def decrement(self, feature_id, user_id, value=1):
+        return self.backend.decrement(feature_id, user_id, value)
 
     def set(self, feature_id, user_id, value):
         return self.backend.set(feature_id, user_id, value)

@@ -11,11 +11,11 @@ class Backend(metaclass=ABCMeta):
         raise NotImplementedError
 
     @abstractmethod
-    def increment(self, feature_id, user_id):
+    def increment(self, feature_id, user_id, value):
         raise NotImplementedError
 
     @abstractmethod
-    def decrement(self, feature_id, user_id):
+    def decrement(self, feature_id, user_id, value):
         raise NotImplementedError
 
     @abstractmethod

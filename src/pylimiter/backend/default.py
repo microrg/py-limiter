@@ -31,13 +31,13 @@ class DefaultBackend(Backend):
             logging.info(resp['reason'])
         return resp['allow']
 
-    def increment(self, feature_id, user_id):
+    def increment(self, feature_id, user_id, value):
         return self._do_request('/increment', {'user_id': user_id,
-                                               'project_id': self.project_id, 'feature_id': feature_id})
+                                               'project_id': self.project_id, 'feature_id': feature_id, 'value': value})
 
-    def decrement(self, feature_id, user_id):
+    def decrement(self, feature_id, user_id, value):
         return self._do_request('/decrement', {'user_id': user_id,
-                                               'project_id': self.project_id, 'feature_id': feature_id})
+                                               'project_id': self.project_id, 'feature_id': feature_id, 'value': value})
 
     def set(self, feature_id, user_id, value):
         return self._do_request('/set', {'user_id': user_id,
